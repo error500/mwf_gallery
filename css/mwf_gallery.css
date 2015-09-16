@@ -1,0 +1,47 @@
+/* line 3, ../scss/mwf_gallery.scss */
+#mwf_photos.loading {
+  min-height: 500px;
+  background: transparent url(../img/loader.gif) no-repeat center center;
+}
+
+/* line 7, ../scss/mwf_gallery.scss */
+#mwf_photos .mwf_photo {
+  padding: 8px;
+  box-shadow: #222 3px 3px 3px;
+  width: 240px;
+  font-size: 87%;
+  background: #F5F5F5;
+  display: block;
+  text-decoration: none;
+  float: left;
+  margin-bottom: 10px;
+  display: none;
+}
+
+/* line 19, ../scss/mwf_gallery.scss */
+#mwf_photos .mwf_photo:hover {
+  box-shadow: #000 3px 3px 3px;
+  background: #FFFFFF;
+}
+
+/* line 23, ../scss/mwf_gallery.scss */
+#mwf_photos .mwf_photo img {
+  max-width: 100%;
+}
+
+/* line 26, ../scss/mwf_gallery.scss */
+#mwf_photos .mwf_photo .title {
+  padding: 8px 8px 0 0;
+  font-style: italic;
+  font-weight: bold;
+  display: block;
+  color: #333333;
+}
+
+/* line 34, ../scss/mwf_gallery.scss */
+#mwf_container {
+  background: url("../img/background.png") repeat scroll left top #eeeeee;
+  box-shadow: 0 0 15px #000000 inset;
+  min-height: 100px;
+  padding: 20px;
+}

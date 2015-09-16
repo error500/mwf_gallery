@@ -1,0 +1,25 @@
+{
+  "name": "mwf_gallery",
+  "version": "0.0.0",
+  "authors": [
+    "error500 <error500@free.fr>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fancybox": "~2.1.5",
+    "imagesloaded": "~3.1.8",
+    "jquery": "~2.1.4",
+    "masonry": "~3.3.0",
+    "modernizr": "~2.8.3"
+  }
+
+
+}
