@@ -24,7 +24,7 @@
       padding : 10,
       helpers : {
         title : {
-          type : 'outside'
+          type : 'inside'
         }
       }
     });

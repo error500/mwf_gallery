@@ -12,7 +12,6 @@ var gulp = require ('gulp'),
 	htmlmin  = require('gulp-htmlmin'),
 	uglify  = require('gulp-uglify'),
 	livereload = require('gulp-livereload'),
-//	watch = require('gulp-watch'),
 	compass = require('gulp-compass');
 
 
@@ -22,7 +21,7 @@ var scssFilter = gulpFilter('scss/*.scss');
 
 
 gulp.task('imagemin', function () {
-    gulp.src(['img-resource/*.jpg','img-resource/*.png','img-resource/*.gif'])
+    gulp.src(['img-resource/*.(jpg|png|gif)'])
         .pipe(imagemin())
         .pipe(gulp.dest('img'));
 });
@@ -94,5 +93,11 @@ gulp.task('watch',function() {
 		console.log('Reload de la page');
 		livereload.reload();
 	
-	});		
+	});
+
+	gulp.watch(['js-resource/*.js']).on('change',function(event){
+		console.log('Trazitement de ' + event.path);
+		gulp.task('minify');
+		livereload.reload();
+	});
 });
