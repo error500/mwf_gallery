@@ -107,8 +107,8 @@ function mwf_gallery_shortcode( $attr ) {
 	}
 
 	// HTML d'ouverture
-	$gallery_div = "<div  id='mwf_container' >";
-	$gallery_div .= " <div id='mwf_photos'  class='loading'>";
+	$gallery_div = "<div  class='mwf_container' >";
+	$gallery_div .= " <div class='mwf_photos loading'>";
 
 	//Styles
 	$output = apply_filters( 'gallery_style', $gallery_style . $gallery_div );

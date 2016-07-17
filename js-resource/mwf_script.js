@@ -1,11 +1,11 @@
 
   jQuery(document).ready(function($) {
 
-    $('#mwf_photos .mwf_photo').hide();
+    $('.mwf_photos .mwf_photo').hide();
 
     $('html').removeClass('no-js').addClass('js');
 
-    var $container = $('#mwf_photos');
+    var $container = $('.mwf_photos');
     
     $container.imagesLoaded(function(){
       $container.find('.mwf_photo').fadeIn('fast'); // Fade back in the thumbnails when the layout is complete

@@ -96,7 +96,7 @@ gulp.task('watch',function() {
 	});
 
 	gulp.watch(['js-resource/*.js']).on('change',function(event){
-		console.log('Trazitement de ' + event.path);
+		console.log('Traitement de ' + event.path);
 		gulp.task('minify');
 		livereload.reload();
 	});
